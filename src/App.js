@@ -15,7 +15,7 @@ export default function App() {
         const allSameValue = dice.every(die => die.value === firstValue)
         if (allHeld && allSameValue) {
             setTenzies(true)
-            if(localStorage.getItem('bestCount')>counter){
+            if(bestCount==='None'||localStorage.getItem('bestCount')>counter){
                 localStorage.setItem('bestCount',counter)
                 setBestCount(localStorage.getItem('bestCount'))
             }
