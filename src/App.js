@@ -2,23 +2,17 @@ import React from "react"
 import Die from "./Die"
 import {nanoid} from "nanoid"
 import Confetti from "react-confetti"
-
 export default function App() {
 
     const [dice, setDice] = React.useState(allNewDice())
     const [tenzies, setTenzies] = React.useState(false)
     const [counter,setCounter]=React.useState(0)
-    const [bestCount,setBestCount]=React.useState(localStorage.getItem('bestCount')||'None')
     React.useEffect(() => {
         const allHeld = dice.every(die => die.isHeld)
         const firstValue = dice[0].value
         const allSameValue = dice.every(die => die.value === firstValue)
         if (allHeld && allSameValue) {
             setTenzies(true)
-            if(bestCount==='None'||localStorage.getItem('bestCount')>counter){
-                localStorage.setItem('bestCount',counter)
-                setBestCount(localStorage.getItem('bestCount'))
-            }
         }
     }, [dice])
 
@@ -84,7 +78,6 @@ export default function App() {
                 {diceElements}
             </div>
             <div className="butt">
-            <p className="best">HighScore: {bestCount}</p>
             <button 
                 className="roll-dice" 
                 onClick={rollDice}
