@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/tenzies/static/js/main.916e7495.js",
+    "main.js": "/tenzies/static/js/main.7913d8f3.js",
     "index.html": "/tenzies/index.html",
-    "main.916e7495.js.map": "/tenzies/static/js/main.916e7495.js.map"
+    "main.7913d8f3.js.map": "/tenzies/static/js/main.7913d8f3.js.map"
   },
   "entrypoints": [
-    "static/js/main.916e7495.js"
+    "static/js/main.7913d8f3.js"
   ]
 }
