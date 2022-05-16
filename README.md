@@ -2,7 +2,7 @@
 # Tenzies Game
 
 - a Tenzies Game made using HTML,CSS,JS & **ReactJS**
-- Implemented Some **ReactJS** Libraries such as **Confetti** , as well as **React Hooks , States , Props & Effects**
+- Implemented Some **ReactJS** Libraries such as **Confetti** , as well as **React Hooks, Props** & Some other features
 
 ## Demo
 
